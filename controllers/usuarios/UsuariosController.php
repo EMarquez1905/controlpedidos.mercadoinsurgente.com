@@ -129,7 +129,7 @@ if (isset($_REQUEST['perfil']) && isset($_REQUEST['nombre']) && isset($_REQUEST[
     $correo = $_REQUEST['correo'];
     $clave = $_REQUEST['clave'];
 
-    $insert = $usuarioModelo->agregar_usuario_crud($perfil,$nombre, $correo, $clave);
+    $insert = $usuarioModelo->agregar_usuario_crud($perfil, $nombre, $correo, $clave);
 
     if ($insert) {
         echo json_encode([
